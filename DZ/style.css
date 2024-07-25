@@ -91,10 +91,10 @@ input[type="search"]::-webkit-search-decoration {
 
 /**********************************************************/
 
-body {
+html {
   font-family: "Arial", sans-serif;
   margin: 50px;
-  background: url(img/back.jpg) 0 0 / contain;
+  background: url(img/back.jpg) 0 0 / 300px;
 }
 
 h1 {
@@ -161,7 +161,7 @@ img:not(:last-child) {
 p {
   font-size: 25px;
   line-height: 1.4;
-  background-color: rgb(1, 119, 215);
+  background-color: rgba(0, 203, 30, 0.845);
   padding: 20px;
   border-radius: 25px;
   max-width: 1200px;
