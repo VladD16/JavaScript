@@ -155,10 +155,18 @@ ul {
   background-color: rgb(52, 218, 2);
 }
 
+img:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 p {
   font-size: 25px;
   line-height: 1.4;
-  background-color: rgb(1, 176, 1);
+  background-color: rgb(1, 119, 215);
   padding: 20px;
   border-radius: 25px;
+  max-width: 1200px;
+}
+p:not(:last-child) {
+  margin-bottom: 30px;
 }
