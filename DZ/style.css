@@ -169,3 +169,32 @@ p {
 p:not(:last-child) {
   margin-bottom: 30px;
 }
+
+table {
+  border: 5px solid rgb(0, 52, 17);
+}
+tr {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 15px;
+  background-color: #015c7a;
+}
+tr:not(:last-child) {
+  border-bottom: 3px solid black;
+}
+th {
+  font-size: 25px;
+  color: #99c300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+}
+td {
+  font-size: 25px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #66bdff;
+}
