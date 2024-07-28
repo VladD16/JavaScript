@@ -5,17 +5,17 @@ let goodsPrice = parseFloat(
 )
 let goodsQuantity = parseInt(prompt('Введіть кількість товару:', '1'))
 
-let totalPrice = (goodsPrice * goodsQuantity).toFixed(1)
-let tax = ((totalPrice / 100) * 5).toFixed(1)
+let totalPrice = goodsPrice * goodsQuantity
+let tax = (totalPrice / 100) * 5
 
 document.write(`
     <table>
         <tr>
             <th>Загальна вартість:</th>
-            <td>${totalPrice} грн.<td>
+            <td>${totalPrice.toFixed(2)} грн.<td>
         </tr>
         <tr>
             <th>ПДВ(5% від загальної вартості):</th>
-            <td>${tax} грн.<td>
+            <td>${tax.toFixed(2)} грн.<td>
         </tr>
     </table>`)

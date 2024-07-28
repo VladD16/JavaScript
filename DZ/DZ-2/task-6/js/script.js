@@ -21,14 +21,11 @@ let productThirdQuantity = parseInt(
   prompt('Кількість одиниць третього товару: (шт.)', '0')
 )
 
-let totalFirstPrice = (productFirstPrice * productFirstQuantity).toFixed(2)
-let totalSecondPrice = (productSecondPrice * productSecondQuantity).toFixed(2)
-let totalThirdPrice = (productThirdPrice * productThirdQuantity).toFixed(2)
+let totalFirstPrice = productFirstPrice * productFirstQuantity
+let totalSecondPrice = productSecondPrice * productSecondQuantity
+let totalThirdPrice = productThirdPrice * productThirdQuantity
 
-let totalPrice =
-  parseFloat(totalFirstPrice) +
-  parseFloat(totalSecondPrice) +
-  parseFloat(totalThirdPrice)
+let totalPrice = totalFirstPrice + totalSecondPrice + totalThirdPrice
 
 document.write(`
     <table>
@@ -42,22 +39,22 @@ document.write(`
            <th>Перший товар</th>
            <td>${productFirstQuantity}</td>
            <td>${productFirstPrice}</td>
-           <td>${totalFirstPrice}</td>
+           <td>${totalFirstPrice.toFixed(2)}</td>
         </tr>
         <tr>
            <th>Другий товар</th>
            <td>${productSecondQuantity}</td>
            <td>${productSecondPrice}</td>
-           <td>${totalSecondPrice}</td>
+           <td>${totalSecondPrice.toFixed(2)}</td>
         </tr>
         <tr>
            <th>Третій товар</th>
            <td>${productThirdQuantity}</td>
            <td>${productThirdPrice}</td>
-           <td>${totalThirdPrice}</td>
+           <td>${totalThirdPrice.toFixed(2)}</td>
         </tr>
         <tr>
            <th class="span">До сплати:</th>
-           <td class="span">${totalPrice} грн.</td>
+           <td class="span">${totalPrice.toFixed(2)} грн.</td>
         </tr>
    </table>`)
