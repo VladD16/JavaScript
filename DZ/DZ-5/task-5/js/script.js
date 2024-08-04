@@ -6,7 +6,6 @@ let evenNumbers = 0
 for (let i = 1; i <= 100; i++) {
   let randomNumber = 1 + Math.floor(Math.random() * 1000)
   randomNumber % 2 === 1 ? (oddNumbers += 1) : (evenNumbers += 1)
-  console.log(randomNumber)
 }
 
 document.write(`<p>Парних числе: ${evenNumbers}</p>`)
