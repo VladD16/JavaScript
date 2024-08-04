@@ -1,12 +1,12 @@
 'use strict'
 
-let monday = 1
-let tuesday = 2
-let wednesday = 3
-let thursday = 4
-let friday = 5
-let saturday = 6
-let sunday = 7
+const mondayNumber = 1
+const tuesdayNumber = 2
+const wednesdayNumber = 3
+const thursdayNumber = 4
+const fridayNumber = 5
+const saturdayNumber = 6
+const sundayNumber = 7
 
 let userChoice = parseInt(prompt(`Введіть номер дня тижня (від 1 до 7)`, `1`))
 

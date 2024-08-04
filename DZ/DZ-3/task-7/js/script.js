@@ -1,17 +1,17 @@
 'use strict'
 
-let January = 1
-let February = 2
-let March = 3
-let April = 4
-let May = 5
-let June = 6
-let July = 7
-let Augusty = 8
-let September = 9
-let October = 10
-let November = 11
-let December = 12
+const januaryNumber = 1
+const februaryNumber = 2
+const marchNumber = 3
+const aprilNumber = 4
+const mayNumber = 5
+const juneNumber = 6
+const julyNumber = 7
+const augustyNumber = 8
+const septemberNumber = 9
+const octoberNumber = 10
+const novemberNumber = 11
+const decemberNumber = 12
 
 let userChoice = parseInt(prompt(`Введіть номер місяця (від 1 до 12)`, `1`))
 
