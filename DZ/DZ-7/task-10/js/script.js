@@ -61,5 +61,5 @@ let res = getNegativeNumbers(
   fifthIndicator
 )
 document.write(
-  `<p>Середнє значення для додатних показів температури: ${res}</p>`
+  `<p>Середнє значення для додатних показів температури: ${Math.round(res)}</p>`
 )
