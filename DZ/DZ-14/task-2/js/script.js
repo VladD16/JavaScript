@@ -10,12 +10,10 @@ if (confirm('Почати тестування?')) {
     year: 2024,
   }
 
-  // Math.floor( value - min + Shift)%(max - min + 1) + min
-
-  function getMonth({ month }, N) {
-    return (Math.floor(month - 1 + N) % 12) + 1
+  function getYear({ month, year }, userMonth) {
+    return Math.floor((month + userMonth - 1) / 12) + year
   }
 
-  const res = getMonth(date, 15)
+  const res = getYear(date, 15)
   document.write(`<p>${res}</p>`)
 }

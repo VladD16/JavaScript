@@ -160,8 +160,12 @@ if (confirm('Почати тестування?')) {
 
   // 5) ===== знайти рік, коли прибуток був найбільшим ======
   let maxPrice = -Infinity
+  let maxPriceYear
   for (const site of webSitesList) {
-    site.price > maxPrice ? (maxPrice = site.price) : maxPrice
+    if (site.price > maxPrice) {
+      maxPrice = site.price
+      maxPriceYear = site.year
+    }
   }
 
   // 6) ====== упорядкувати список за спаданням прибутку =======
@@ -187,7 +191,7 @@ if (confirm('Почати тестування?')) {
     2) ${sitesQuantityForPeriod} <br>
     3) ${sitesQuantityMore100000} <br>
     4) ${personList.join(`, `)} <br>
-    5) ${maxPrice} <br>
+    5) ${maxPriceYear} <br>
     6) Результат в консолі <br>
     7) Результат в консолі 
     </p>`)
