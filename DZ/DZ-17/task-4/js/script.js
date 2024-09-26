@@ -53,12 +53,12 @@ if (confirm('Почати тестування?')) {
 
     takeProduct(prodTitle, quantity) {
       let res = false
-      this.products.forEach((el) => {
-        if (el.title === prodTitle && el.Quantity >= quantity) {
-          el.Quantity -= quantity
-          res = true
-        }
-      })
+      const prod = this.products.find((prod) => prod.title === prodTitle)
+      if (prod.Quantity >= quantity) {
+        prod.Quantity -= quantity
+        res = true
+      }
+
       if (res === false) {
         throw new Error('Такого товару або такої кількості немає!')
       } else res
