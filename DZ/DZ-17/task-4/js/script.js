@@ -54,7 +54,7 @@ if (confirm('Почати тестування?')) {
     takeProduct(prodTitle, quantity) {
       let res = false
       const prod = this.products.find((prod) => prod.title === prodTitle)
-      if (prod.Quantity >= quantity) {
+      if (prod && prod.Quantity >= quantity) {
         prod.Quantity -= quantity
         res = true
       }
