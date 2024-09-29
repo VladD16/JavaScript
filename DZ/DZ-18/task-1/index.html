@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task №1</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .calc {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            background-color: rgb(43, 167, 43);
+            padding: 30px;
+            border-radius: 35px;
+            max-width: 500px;
+            color: black;
+            font-size: 30px;
+        }
+
+        .line {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .line span {
+            flex-shrink: 0;
+        }
+
+        .line input {
+            padding: 5px;
+            border: 2px solid black;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .button {
+            background-color: rgb(115, 153, 38);
+            padding: 10px;
+            border-radius: 15px;
+            border: 2px solid black;
+            transition: all 0.3s;
+        }
+
+        .button:hover {
+            background-color: rgb(135, 202, 2);
+        }
+
+        .res {
+            color: rgb(219, 238, 8);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Task №1</h1>
+    <a href="../index.html" class="button-back">Tasks</a>
+    <p>
+        Задача 1. Розробити калькулятор
+    </p>
+    <div class="calc">
+        <label class="line">
+            <span>First Number:</span>
+            <input type="number" id="first" value="0">
+        </label>
+        <label class="line">
+            <span> Second Number:</span>
+            <input type="number" id="second" value="0">
+        </label>
+        <div class="buttons">
+            <button type="button" class="button button-add">Додати</button>
+            <button type="button" class="button button-sub">Відняти</button>
+            <button type="button" class="button button-mult">Помножити</button>
+            <button type="button" class="button button-div">Поділити</button>
+        </div>
+        <div class="line">
+            <span> Результат:</span>
+            <span class="res" id="res"></span>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task №6</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .field {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            background-color: rgb(43, 167, 43);
+            padding: 30px;
+            border-radius: 35px;
+            max-width: 500px;
+            color: black;
+            font-size: 30px;
+        }
+
+        .line {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .line span {
+            flex-shrink: 0;
+        }
+
+        .line input {
+            padding: 5px;
+            border: 2px solid black;
+            width: 100%;
+        }
+
+        .button {
+            background-color: rgb(115, 153, 38);
+            padding: 10px;
+            border-radius: 15px;
+            border: 2px solid black;
+            transition: all 0.3s;
+        }
+
+        .button:hover {
+            background-color: rgb(135, 202, 2);
+        }
+
+        .res {
+            color: rgb(219, 238, 8);
+        }
+
+        tr {
+            grid-template-columns: 1fr;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Task №6</h1>
+    <a href="../index.html" class="button-back">Tasks</a>
+    <p>
+        Задача 6. Користувач задає кількість оцінок і натискає на кнопку «get table». В результаті формується таблиця з
+        input, куди користувач вводить оцінки. Після цього натискає на кнопку “get sum” і знаходить середнє значення.
+    </p>
+    <div class="field">
+        <label class="line">
+            <span>Введіть кількість оцінок:</span>
+            <input type="number" value="0" id="gradesNumber">
+        </label>
+        <button class="button button-quantity" type="button">Get table</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

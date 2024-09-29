@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task №7</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .trip {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            background-color: rgb(43, 167, 43);
+            padding: 30px;
+            border-radius: 35px;
+            max-width: 300px;
+            color: black;
+        }
+
+        .title {
+            font-size: 35px;
+            margin-bottom: 15px;
+            text-decoration: underline;
+        }
+
+        form {
+            font-size: 20px;
+            padding: 10px 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        form:not(:last-child) {
+            border-bottom: 2px solid black;
+        }
+
+        .line {
+            display: inline-flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+        }
+
+        input {
+            display: inline-block;
+            width: auto;
+        }
+
+        label {
+            flex-grow: 1;
+            display: block;
+        }
+
+        select {
+            font-size: 20px;
+        }
+
+        .button {
+            background-color: rgb(115, 153, 38);
+            padding: 10px;
+            border-radius: 15px;
+            border: 2px solid black;
+            transition: all 0.3s;
+        }
+
+        .button:hover {
+            background-color: rgb(135, 202, 2);
+        }
+
+        .res {
+            color: rgb(219, 238, 8);
+            font-size: 30px;
+        }
+
+        .result {
+            display: flex;
+            font-size: 20px;
+            gap: 20px;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Task №7</h1>
+    <a href="../index.html" class="button-back">Tasks</a>
+    <p>
+        Задача 7. Подорож складається з 3 етапів. На кожному етапі користувач може вибрати один з
+        видів транспорту (авто, автобус, літак - випадаючий список), харчування (сніданок, обід,
+        вечеря – checkbоx) та одного з 3-х гідів(використати - radio buttons). Ціни визначте самі.
+        Підрахувати загальну вартість.
+    </p>
+    <div class="trip">
+        <div class="first-step">
+            <h2 class="title">Перший етап:</h2>
+            <form>
+                <label for="transport">Транспорт:</label>
+                <select id="transport" name="transport">
+                    <option value="500">Авто</option>
+                    <option value="200">Автобус</option>
+                    <option value="800">Літак</option>
+                </select>
+            </form>
+            <form>
+                <div class="line">
+                    <input type="checkbox" id="breakfast" name="breakfast" value="200">
+                    <label for="breakfast">Сніданок</label>
+                </div>
+
+                <div class="line">
+                    <input type="checkbox" id="lunch" name="lunch" value="300">
+                    <label for="lunch">Обід</label>
+
+                </div>
+                <div class="line">
+                    <input type="checkbox" id="dinner" name="dinner" value="200">
+                    <label for="dinner">Вечеря</label>
+                </div>
+            </form>
+            <form>
+                <div class="line">
+                    <input type="radio" id="guide1" name="guide" value="300">
+                    <label for="guide1">Гід 1</label>
+                </div>
+
+                <div class="line">
+                    <input type="radio" id="guide2" name="guide" value="400">
+                    <label for="guide2">Гід 2</label>
+                </div>
+
+                <div class="line">
+                    <input type="radio" id="guide3" name="guide" value="500">
+                    <label for="guide3">Гід 3</label>
+                </div>
+            </form>
+        </div>
+        <div class="second-step">
+            <h2 class="title">Другий етап:</h2>
+            <form>
+                <label for="transport">Транспорт:</label>
+                <select id="transport" name="transport">
+                    <option value="500">Авто</option>
+                    <option value="200">Автобус</option>
+                    <option value="800">Літак</option>
+                </select>
+            </form>
+            <form>
+                <div class="line">
+                    <input type="checkbox" id="breakfast" name="breakfast" value="200">
+                    <label for="breakfast">Сніданок</label>
+                </div>
+
+                <div class="line">
+                    <input type="checkbox" id="lunch" name="lunch" value="300">
+                    <label for="lunch">Обід</label>
+                </div>
+
+                <div class="line">
+                    <input type="checkbox" id="dinner" name="dinner" value="200">
+                    <label for="dinner">Вечеря</label>
+                </div>
+            </form>
+            <form>
+                <div class="line">
+                    <input type="radio" id="guide1" name="guide" value="300">
+                    <label for="guide1">Гід 1</label>
+                </div>
+
+                <div class="line">
+                    <input type="radio" id="guide2" name="guide" value="400">
+                    <label for="guide2">Гід 2</label>
+                </div>
+
+                <div class="line">
+                    <input type="radio" id="guide3" name="guide" value="500">
+                    <label for="guide3">Гід 3</label>
+                </div>
+            </form>
+        </div>
+        <div class="third-step">
+            <h2 class="title">Третій етап:</h2>
+            <form>
+                <label for="transport">Транспорт:</label>
+                <select id="transport" name="transport">
+                    <option value="500">Авто</option>
+                    <option value="200">Автобус</option>
+                    <option value="800">Літак</option>
+                </select>
+            </form>
+            <form>
+                <div class="line">
+                    <input type="checkbox" id="breakfast" name="breakfast" value="200">
+                    <label for="breakfast">Сніданок</label>
+                </div>
+
+                <div class="line">
+                    <input type="checkbox" id="lunch" name="lunch" value="300">
+                    <label for="lunch">Обід</label>
+                </div>
+
+                <div class="line">
+                    <input type="checkbox" id="dinner" name="dinner" value="200">
+                    <label for="dinner">Вечеря</label>
+                </div>
+            </form>
+            <form>
+                <div class="line">
+                    <input type="radio" id="guide1" name="guide" value="300">
+                    <label for="guide1">Гід 1</label>
+                </div>
+
+                <div class="line">
+                    <input type="radio" id="guide2" name="guide" value="400">
+                    <label for="guide2">Гід 2</label>
+                </div>
+
+                <div class="line">
+                    <input type="radio" id="guide3" name="guide" value="500">
+                    <label for="guide3">Гід 3</label>
+                </div>
+            </form>
+        </div>
+        <button class="button" type="button">Get total sum</button>
+        <div class="result">Загальна сума:<span class="res" id="res"></span></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
