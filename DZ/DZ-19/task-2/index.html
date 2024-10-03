@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task №2</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .line {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            font-size: 25px;
+            background-color: greenyellow;
+            padding: 20px;
+            border-radius: 15px;
+            max-width: 300px;
+        }
+
+        .line label {
+            flex-shrink: 0;
+        }
+
+        .line input {
+            border: 2px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Task №2</h1>
+    <a href="../index.html" class="button-back">Tasks</a>
+    <p>
+        Задача 2. Дано 5 елементів input. При введенні значення у якийсь із них необхідно автоматично заповнювати інші
+        (усі попередні у спадному порядку(кожен попередній має значення на 1 менше за наступний), усі наступні на 1
+        більше (кожен наступне на 1 більше за попереднього)
+    </p>
+    <div class="line">
+        <label for="input-1">Value 1</label>
+        <input id="input-1" type="number" value="0">
+    </div>
+    <div class="line">
+        <label for="input-2">Value 2</label>
+        <input id="input-2" type="number" value="0">
+    </div>
+    <div class="line">
+        <label for="input-3">Value 3</label>
+        <input id="input-3" type="number" value="0">
+    </div>
+    <div class="line">
+        <label for="input-4">Value 4</label>
+        <input id="input-4" type="number" value="0">
+    </div>
+    <div class="line">
+        <label for="input-5">Value 5</label>
+        <input id="input-5" type="number" value="0">
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task №5</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .products {
+            max-width: 990px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .item-products {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .item-products__title {
+            font-size: 25px;
+        }
+
+        .item-products__image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .selected {
+            border: 5px solid green;
+            /* box-shadow: 0 0 10px green; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Task №5</h1>
+    <a href="../index.html" class="button-back">Tasks</a>
+    <p>
+        Задача 5. Відображаємо картки товарів, які користувач може вибирати. Вибраний товар має зелену рамку (при кліку
+        робити toogle з класом вибраного елемента)
+    </p>
+    <div class="products">
+        <div class="products__item item-products">
+            <div class="item-products__image">
+                <img src="img/kari-shea-1SAnrIxw5OY-unsplash.jpg" alt="Image">
+            </div>
+            <h4 class="item-products__title">Some title</h4>
+            <div class="item-products__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex eius quibusdam nihil possimus totam laborum
+                deleniti soluta odit molestias, vel expedita aut, dolores, consectetur praesentium ad vero neque
+                reiciendis maiores.
+            </div>
+        </div>
+        <div class="products__item item-products">
+            <div class="item-products__image">
+                <img src="img/kari-shea-1SAnrIxw5OY-unsplash.jpg" alt="Image">
+            </div>
+            <h4 class="item-products__title">Some title</h4>
+            <div class="item-products__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex eius quibusdam nihil possimus totam laborum
+                deleniti soluta odit molestias, vel expedita aut, dolores, consectetur praesentium ad vero neque
+                reiciendis maiores.
+            </div>
+        </div>
+        <div class="products__item item-products">
+            <div class="item-products__image">
+                <img src="img/kari-shea-1SAnrIxw5OY-unsplash.jpg" alt="Image">
+            </div>
+            <h4 class="item-products__title">Some title</h4>
+            <div class="item-products__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex eius quibusdam nihil possimus totam laborum
+                deleniti soluta odit molestias, vel expedita aut, dolores, consectetur praesentium ad vero neque
+                reiciendis maiores.
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

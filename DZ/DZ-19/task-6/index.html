@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task №6</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .sportsments {
+            display: flex;
+            background-color: rgb(39, 179, 39);
+            gap: 30px;
+            min-height: 300px;
+            padding: 15px;
+            max-width: 600px;
+        }
+
+        .column-left {
+            flex: 1 1 50%;
+        }
+
+        .column-right {
+            flex: 1 1 50%;
+        }
+
+        .list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .item {
+            font-size: 20px;
+            padding: 10px;
+            background-color: rgb(228, 228, 51);
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: 15px;
+            text-decoration: underline;
+            background-color: rgb(181, 36, 36);
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Task №6</h1>
+    <a href="../index.html" class="button-back">Tasks</a>
+    <p>
+        Задача 6. Дано список спортсменів. Потрібно сформувати список тих, які будуть брати участь у змаганні. При цьому
+        є два стовпці. В одному відображені всі спортсмени, в іншому – список тих, хто був вибраний. При натисканні на
+        зелену стрілку спортсмен переміщається у список для змагань. При натисканні на червону стрілку спортсмен
+        переміщається у загальний список.
+    </p>
+    <div class="sportsments">
+        <div class="sportsments__column column-left">
+            <h3 class="column-left__title title">В запасі:</h3>
+            <ul class="column-left__list list">
+                <li class="column-left__item item">John Williams</li>
+                <li class="column-left__item item">William Johnson</li>
+                <li class="column-left__item item">James Brown</li>
+                <li class="column-left__item item">Michael Jones</li>
+                <li class="column-left__item item">David Smith</li>
+                <li class="column-left__item item">Mary Wilson</li>
+                <li class="column-left__item item">Patricia Davies</li>
+                <li class="column-left__item item">Jennifer Patel</li>
+            </ul>
+        </div>
+        <div class="sportsments__column column-right">
+            <h3 class="column-right__title title">Грають:</h3>
+            <ul class="column-right__list list"></ul>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
