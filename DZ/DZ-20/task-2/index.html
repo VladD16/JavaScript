@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task №2</title>
+    <style>
+        body {
+            height: 100svh;
+            overflow: hidden;
+            background-color: green;
+            margin: 0;
+        }
+
+        .tanks-container {
+            position: relative;
+            height: 100%;
+            margin-inline: 110px;
+            background-color: grey;
+        }
+
+        .tank {
+            width: 130px;
+            cursor: pointer;
+            position: absolute;
+            z-index: 2;
+        }
+
+        .res {
+            position: fixed;
+            z-index: 50;
+            top: 1%;
+            left: 1%;
+            background-color: rgb(26, 99, 201);
+            padding: 5px;
+            border-radius: 5px;
+            z-index: 2;
+            font-size: 20px;
+            line-height: 2;
+            min-width: 150px;
+            color: rgb(29, 241, 21);
+        }
+
+        input {
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="res">
+        <div>Destroyed: <input type="text" value="0" id="des" disabled></div>
+        <div>Missed: <input type="text" value="0" id="mis" disabled></div>
+    </div>
+    <div class="tanks-container"></div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

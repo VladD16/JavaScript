@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task №3</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .line {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            max-width: 600px;
+            background-color: rgb(59, 177, 59);
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+
+        .label {
+            flex-shrink: 0;
+            font-size: 20px;
+        }
+
+        .input {
+            height: 40px;
+            padding-inline: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        .list-container {
+            background-color: rgb(59, 177, 59);
+            padding: 20px;
+            border-radius: 20px;
+            max-width: 600px;
+        }
+
+        .list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .list__item {
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="line">
+        <label class="label" for="input-1">Введіть ім'я</label>
+        <input class="input" type="text" id="input-1">
+    </div>
+    <div class="list-container">
+        <ul class="list">
+            <li class="list__item">Іван</li>
+            <li class="list__item">Петро</li>
+            <li class="list__item">Ольга</li>
+            <li class="list__item">Влад</li>
+            <li class="list__item">Богдан</li>
+            <li class="list__item">Софія</li>
+            <li class="list__item">Михайло</li>
+            <li class="list__item">Анастасія</li>
+        </ul>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
