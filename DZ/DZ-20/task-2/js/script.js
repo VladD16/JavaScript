@@ -17,14 +17,14 @@ class Tank {
   }
 
   setRandomInterval() {
-    return Math.random() * 2000
+    return (1 + Math.random()) * 1000
   }
 
   moving() {
     this.y = parseInt(this.img.style.top) + 2
     this.img.style.top = `${this.y}%`
     if (this.y > 100) {
-      let totalMis = parseFloat(document.getElementById('mis').value)
+      const totalMis = parseFloat(document.getElementById('mis').value)
       totalMis++
       document.getElementById('mis').value = totalMis
       clearInterval(this.intervalID)
@@ -34,6 +34,7 @@ class Tank {
 
   onClick() {
     this.img.setAttribute('src', this.imagesObj.boom)
+    this.img.style.zIndex = '1'
     clearInterval(this.intervalID)
     let totalDes = parseFloat(document.getElementById('des').value)
     totalDes++
