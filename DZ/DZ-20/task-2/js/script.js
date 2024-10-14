@@ -24,7 +24,7 @@ class Tank {
     this.y = parseInt(this.img.style.top) + 2
     this.img.style.top = `${this.y}%`
     if (this.y > 100) {
-      const totalMis = parseFloat(document.getElementById('mis').value)
+      let totalMis = parseFloat(document.getElementById('mis').value)
       totalMis++
       document.getElementById('mis').value = totalMis
       clearInterval(this.intervalID)
