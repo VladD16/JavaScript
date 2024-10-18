@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task №5</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .container {
+            padding: 20px;
+            border-radius: 15px;
+            background-color: rgb(81, 225, 70);
+            max-width: 900px;
+            font-size: 25px;
+        }
+
+        .line {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        input {
+            border: 1px solid black;
+            border-radius: 10px;
+            padding-inline: 20px;
+            height: 40px;
+        }
+
+        input::placeholder {
+            color: black;
+            opacity: 0.5;
+        }
+
+        label {
+            flex-shrink: 0;
+
+        }
+
+        .res {
+            margin-bottom: 25px;
+        }
+
+        button {
+            background-color: yellowgreen;
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid black;
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Task №5</h1>
+    <a href="../index.html" class="button-back">Tasks</a>
+    <p>
+        Задача 5. Дано дата виробництва йогурта (вводимо рік, місяць, день) та кількість днів придатності. Визначити чи
+        є він придатним на даний момент.
+    </p>
+    <div class="container">
+        <div class="line">
+            <label for="input-1">Введіть дату виробництва (рік, місяць, день):</label>
+            <input type="text" id="input-1" placeholder="2024, 1, 21">
+        </div>
+        <div class="line">
+            <label for="input-2">Введіть кількість днів придатності:</label>
+            <input type="text" id="input-2" placeholder="30">
+        </div>
+        <div class="res">Товар: <span id="res"></span></div>
+        <button type="button" id="button">Отримати результата</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
