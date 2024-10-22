@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task №1</title>
+    <style>
+        body {
+            height: 100svh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s;
+        }
+
+        .color-section {
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            font-size: 20px;
+            text-transform: uppercase;
+            text-decoration: underline;
+            padding: 10px;
+            background-color: white;
+        }
+
+        .color-input {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .text {
+            font-size: 20px;
+            padding: 10px;
+            background-color: white;
+        }
+
+        .res-input {
+            max-width: 50px;
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="color-section">
+        <label for="color-input">Choose background color</label>
+        <input class="color-input" id="color-input" type="color">
+        <div class="text">Color changes: <input class="res-input" type="text" value="0" disabled id="res"></input></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
